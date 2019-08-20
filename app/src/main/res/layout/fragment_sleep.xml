@@ -1,0 +1,462 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/commonbg"
+    tools:context="in.appstute.smartbuckle.ui.fragment.SleepFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/sleepImg"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/sbsleep"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/sleepFragDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sleepImg"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#5B3428"
+            android:gravity="center"/>
+
+    </RelativeLayout>    <!--end of image of sleep -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/lightSleepImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/lightsleepicon"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/lightSleepTxt"
+                android:layout_below="@+id/lightSleepImg"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#3E221B"
+                android:textSize="16sp"
+                android:text="light sleep"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true">
+
+     <TextView
+         android:id="@+id/lightSleepHour"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="50sp"
+         android:textColor="#3E221B"
+         android:text="0"/>
+
+        <TextView
+            android:id="@+id/h1txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/lightSleepHour"
+            android:textColor="#3E221B"
+            android:text="h"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/lightSleepMin"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/h1txt"
+            android:textSize="50sp"
+            android:textColor="#3E221B"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/m1txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/lightSleepMin"
+            android:textColor="#3E221B"
+            android:text="m"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/lightSleepMin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/m1txt"
+            android:textColor="#3E221B"
+            android:text="30"/>
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/deepSleepImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/deepsleepicon"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/deepSleepTxt"
+                android:layout_below="@+id/deepSleepImg"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#3E221B"
+                android:textSize="16sp"
+                android:text="deep sleep"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/deepSleepHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:textColor="#3E221B"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/h2txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/deepSleepHour"
+                android:textColor="#3E221B"
+                android:text="h"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:id="@+id/deepSleepMin"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/h2txt"
+                android:textSize="50sp"
+                android:textColor="#3E221B"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/m2txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/deepSleepMin"
+                android:textColor="#3E221B"
+                android:text="m"
+                android:layout_alignParentBottom="true"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/deepSleepMin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/m2txt"
+                android:textColor="#3E221B"
+                android:text="30"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/wakeUpImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/sleepaticon"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/sleepAtTxt"
+                android:layout_below="@+id/wakeUpImg"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#3E221B"
+                android:textSize="16sp"
+                android:text="sleep at"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/wakeUpHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:textColor="#3E221B"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/h3txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/wakeUpHour"
+                android:textColor="#3E221B"
+                android:text=":"
+                android:textSize="50sp"/>
+
+            <TextView
+                android:id="@+id/sleepAtMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/h3txt"
+                android:textSize="50sp"
+                android:textColor="#3E221B"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/m3txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/sleepAtMin"
+                android:textColor="#3E221B"
+                android:text="pm"
+                android:layout_alignParentBottom="true"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/sleepAtMin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/m3txt"
+                android:textColor="#3E221B"
+                android:text="30"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/wakingUpImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/wakeupicon"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/wakeUpTxt"
+                android:layout_below="@+id/wakingUpImg"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#3E221B"
+                android:textSize="16sp"
+                android:text="wake up"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/wakingUpHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:textColor="#5B3428"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/h4txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/wakingUpHour"
+                android:text=":"
+                android:textSize="50sp"
+                android:textColor="#5B3428"/>
+
+            <TextView
+                android:id="@+id/wakeUpMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/h4txt"
+                android:textSize="50sp"
+                android:textColor="#5B3428"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/m4txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/wakeUpMin"
+                android:textColor="#3E221B"
+                android:text="pm"
+                android:layout_alignParentBottom="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/wakeUpMin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/m4txt"
+                android:textColor="#3E221B"
+                android:text="30"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/totalSleepImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/totalsleep"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/totalsleepTxt"
+                android:layout_below="@+id/totalSleepImg"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#3E221B"
+                android:textSize="16sp"
+                android:text="total sleep"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/totalsleepHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:textColor="#5B3428"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/h5txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/totalsleepHour"
+                android:text=":"
+                android:textSize="50sp"
+                android:textColor="#5B3428"/>
+
+            <TextView
+                android:id="@+id/totalsleepMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/h5txt"
+                android:textSize="50sp"
+                android:textColor="#5B3428"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/m5txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/totalsleepMin"
+                android:textColor="#3E221B"
+                android:text="pm"
+                android:layout_alignParentBottom="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/totalsleepMin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/m5txt"
+                android:textColor="#3E221B"
+                android:text="30"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

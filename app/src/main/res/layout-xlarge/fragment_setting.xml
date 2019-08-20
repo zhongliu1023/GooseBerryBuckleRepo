@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/commonbg"
+    tools:context="in.appstute.smartbuckle.ui.fragment.SettingFragment">
+
+    <RelativeLayout
+     android:id="@+id/settingHeader"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="15dp"
+     android:layout_marginEnd="15dp"
+     android:layout_marginTop="25dp">
+
+    <TextView
+        android:id="@+id/settingTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textColor="#290200"
+        android:text="@string/settings_text"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+     </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/collectionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settingHeader"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center">
+
+      <ImageView
+          android:id="@+id/collectionBuckle"
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:src="@mipmap/buckle1"
+          android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/collectionTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collectionBuckle"
+            android:gravity="center"
+            android:text="Your Collection"
+            android:textColor="#5B3428"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/collectionLayout"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/profileicon"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/profileTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileIcon"
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="#5B3428"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gfitlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileLayout"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/gfiticon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/hearticon"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/gfitTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gfiticon"
+            android:gravity="center"
+            android:text="Google Fit"
+            android:textColor="#5B3428"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/assistlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gfitlayout"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/assisticon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/asisticon"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/assistTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/assisticon"
+            android:gravity="center"
+            android:text="Assist Me"
+            android:textColor="#5B3428"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/philosophylayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/assistlayout"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/philosophyIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/fruiticon"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/philosophyTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/philosophyIcon"
+            android:gravity="center"
+            android:text="Philosophy"
+            android:textColor="#5B3428"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

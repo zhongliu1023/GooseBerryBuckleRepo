@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/commonbg"
+    tools:context="in.appstute.smartbuckle.ui.activity.DeviceConnectActivity">
+
+    <RelativeLayout
+        android:id="@+id/connectSuccessHeadsub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/devSuccessHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:text="Pair your Smart Buckle"/>
+
+        <TextView
+            android:id="@+id/devSuccessSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/devSuccessHeader"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:layout_centerVertical="true"
+            android:text="Please make sure your smart buckle is fully charged and close to your phone."/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buckleAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connectSuccessHeadsub"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/connected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#008000"
+            android:textSize="18dp"
+            android:text="Connected :)"/>
+
+        <ImageView
+            android:id="@+id/pairBuckle"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/buckle1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/devBuckleImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buckleAdd"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <TextView
+            android:id="@+id/deviceTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="#5B3428"
+            android:textSize="18sp"
+            android:text="xxxxxxxxx"/>
+
+        <TextView
+            android:id="@+id/deviceName"
+            android:layout_below="@+id/deviceTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="#5B3428"
+            android:textSize="20sp"
+            android:text="Smart Buckle"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/devConnectedDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/devBuckleImage"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/addBuckleDone"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="Done"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:textColor="@drawable/btn_textchange"
+            android:background="@drawable/btn_backgroundchange"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

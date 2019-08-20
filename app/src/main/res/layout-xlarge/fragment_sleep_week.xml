@@ -1,0 +1,279 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/commonbg"
+    tools:context="in.appstute.smartbuckle.ui.fragment.MoveWeekFragment">
+
+    <RelativeLayout
+        android:id="@+id/sleepWeekHeadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/sleepWeekHeadTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#5B3428"
+            android:textSize="20sp"
+            android:text="Week"/>
+
+        <TextView
+            android:id="@+id/sleepWeeklyDate"
+            android:layout_below="@+id/sleepWeekHeadTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="#5B3428"
+            android:textSize="17sp"
+            android:text="26th March - 1st April"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sleepStepAvgLayout"
+        android:layout_below="@+id/sleepWeekHeadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <TextView
+            android:id="@+id/sleepStepTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Steps"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/sleepDailyAvgTxt"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#5B3428"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/sleepDailyTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/sleepDailyAvgTxt"
+            android:layout_marginRight="5dp"
+            android:text="Daily Average"
+            android:textSize="17sp"
+            android:textColor="#5B3428"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/sleepStepAvgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#816c5b"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:id="@+id/sleepWeekSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sleepStepAvgLayout"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:textSize="17sp"
+        android:text="0"/>
+
+    <RelativeLayout
+        android:id="@+id/sleepWeekGraph"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/sleepWeekSteps"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"> <!--Graph Layout Start-->
+
+    </RelativeLayout>  <!--Graph Layout End-->
+
+    <RelativeLayout
+        android:id="@+id/sleepWeekGraphDataLayout"
+        android:layout_below="@+id/sleepWeekGraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">  <!--Graphdata Layout Start-->
+
+        <RelativeLayout
+            android:id="@+id/sleepWeekStepsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/sleepWeekStepsIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/stepsicon"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/sleepWeekTotalTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Total"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/sleepWeekTotaltxtDisp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@+id/sleepWeekTotalTxt"
+                android:layout_alignParentRight="true"
+                android:text="0"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/sleepWeekStepsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="#816c5b"
+            android:layout_marginTop="1dp"/>
+
+        <RelativeLayout
+            android:id="@+id/sleepMonthDistLayout"
+            android:layout_below="@+id/sleepWeekStepsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:id="@+id/sleepMonthDistIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/distanceicon"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/sleepTotalmonthDistTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Total"
+                android:textSize="13sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@+id/sleepTotalmonthDistTxt"
+                android:layout_alignParentRight="true"
+                android:text="0"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/sleepMonthDistLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="#816c5b"
+            android:layout_marginTop="1dp"/>
+
+        <RelativeLayout
+            android:id="@+id/sleepMonthCalLayout"
+            android:layout_below="@+id/sleepMonthDistLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:id="@+id/sleepCalMonthIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/caloryicon"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/sleepTotalCalMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Total"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/sleepCalDisp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@+id/sleepTotalCalMonth"
+                android:layout_alignParentRight="true"
+                android:text="0"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/sleepMonthCalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="#816c5b"
+            android:layout_marginTop="1dp"/>
+
+        <RelativeLayout
+            android:id="@+id/paceMonthLayout"
+            android:layout_below="@+id/sleepMonthCalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:id="@+id/paceMonthIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/paceicon"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/averageMonthPaceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Average"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/totalPaceMonthDisp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@+id/averageMonthPaceTxt"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:text="stps/min"/>
+            <TextView
+                android:id="@+id/stepsMonthMinTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@+id/averageMonthPaceTxt"
+                android:layout_toLeftOf="@+id/totalPaceMonthDisp"
+                android:text="0"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/paceMonthLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="#816c5b"
+            android:layout_marginTop="1dp"/>
+
+
+
+    </RelativeLayout>  <!--Graphdata Layout End-->
+
+</RelativeLayout>

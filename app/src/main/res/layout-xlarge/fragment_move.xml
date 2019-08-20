@@ -1,0 +1,380 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/commonbg"
+    tools:context="in.appstute.smartbuckle.ui.fragment.MoveFragment"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp">
+        
+        <ImageView
+            android:id="@+id/moveImg"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/sbmove"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/moveFragDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/moveImg"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#5B3428"
+            android:gravity="center"/>
+        
+    </RelativeLayout>
+
+    <!--Relative layout for adding steps -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="5dp">
+
+       <RelativeLayout
+           android:layout_width="100dp"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/stepImg"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:src="@mipmap/stepsicon"
+               android:layout_centerHorizontal="true"/>
+
+           <TextView
+               android:id="@+id/stepTxt"
+               android:layout_below="@+id/stepImg"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:textColor="#5B3428"
+               android:textSize="18sp"
+               android:text="steps"
+               android:gravity="center"/>
+
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/stepTxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:textColor="#5B3428"
+            android:text="0"/>
+
+         <ImageView
+             android:id="@+id/updownArr1"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:layout_toRightOf="@+id/stepTxt1"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@+id/updownArr1"
+              android:text="100"
+              android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--Layout for pace -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="9dp">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/paceImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/paceicon"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/paceTxt"
+                android:layout_below="@+id/paceImg"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#5B3428"
+                android:text="pace"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/paceSubTxt"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paceTxt"
+                android:textStyle="bold"
+                android:textColor="#5B3428"
+                android:gravity="center"
+                android:text="(steps/min)"
+                android:textSize="17sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/paceTxt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:textColor="#5B3428"
+                android:text="0"/>
+
+            <ImageView
+                android:id="@+id/updownArr2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/paceTxt1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/updownArr2"
+                android:text="20"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--layout for calories -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="9dp">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/caloriesImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/caloryicon"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/caloryTxt"
+                android:layout_below="@+id/caloriesImg"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#5B3428"
+                android:text="calories"
+                android:gravity="center"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/calTxt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:textColor="#5B3428"
+                android:text="0"/>
+
+            <ImageView
+                android:id="@+id/updownArr3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/calTxt1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/updownArr3"
+                android:text="20"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--Layout of total time -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="9dp">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-10dp">
+
+            <ImageView
+                android:id="@+id/totalTimeImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/timeicon"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/timeTxt"
+                android:layout_below="@+id/totalTimeImg"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#5B3428"
+                android:text="total time"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/timeTxt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:textColor="#5B3428"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/timeTxt1"
+                android:text="h"
+                android:layout_alignParentBottom="true"/>
+            <TextView
+                android:id="@+id/minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/hour"
+                android:textColor="#5B3428"
+                android:text="30"
+                android:textSize="50sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/minute"
+                android:text="m"
+                android:layout_alignParentBottom="true"/>
+            <ImageView
+                android:id="@+id/updownArr4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/minute"/>
+            <TextView
+                android:id="@+id/timeTxt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/updownArr4"
+                android:text="30"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--Layout of distance -->
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/distanceImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/distanceicon"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/distanceTxt"
+                android:layout_below="@+id/distanceImg"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#5B3428"
+                android:text="distance"
+                android:gravity="center"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/distanceTxt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5B3428"
+                android:textSize="50sp"
+                android:text="0"/>
+
+            <ImageView
+                android:id="@+id/updownArr5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/distanceTxt1"/>
+
+            <TextView
+                android:id="@+id/kmsTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/distanceTxt1"
+                android:text="kms"
+                android:layout_alignParentBottom="true"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

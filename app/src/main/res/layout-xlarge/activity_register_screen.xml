@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/commonbg"
+    tools:context="in.appstute.smartbuckle.ui.activity.RegisterScreenActivity">
+
+    <RelativeLayout
+        android:id="@+id/regHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/regHeaderTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello and welcome to the gooseberry family."
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#1a1a1a"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/regSubheaderTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regHeaderTxt"
+            android:layout_marginTop="100dp"
+            android:text="Please fill in the details to register with us :)"
+            android:textSize="23sp"
+            android:textColor="#272625"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/regHeader"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+
+        <EditText
+            android:id="@+id/enterFullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#3f2314"
+            android:textSize="25sp"
+            android:inputType="text"
+            android:hint="Full Name"
+            android:textColorHint="#696764"/>  <!--Full name -->
+
+        <EditText
+            android:id="@+id/enterCellphone"
+            android:layout_below="@+id/enterFullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentStart="true"
+            android:textSize="25sp"
+            android:textColor="#3f2314"
+            android:inputType="phone"
+            android:hint="Cell Phone"
+            android:textColorHint="#696764"/>  <!--cell phone -->
+
+        <EditText
+            android:id="@+id/enterEmail"
+            android:layout_below="@+id/enterCellphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:textSize="25sp"
+            android:textColor="#3f2314"
+            android:layout_alignParentStart="true"
+            android:inputType="textWebEmailAddress"
+            android:hint="Email"
+            android:textColorHint="#696764"/>  <!--Email -->
+
+        <EditText
+            android:id="@+id/enterPassword"
+            android:layout_below="@+id/enterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#3f2314"
+            android:layout_marginTop="5dp"
+            android:textSize="25sp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColorHint="#696764"/>   <!-- Password-->
+
+        <EditText
+            android:id="@+id/enterReenter"
+            android:layout_below="@+id/enterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:textSize="25sp"
+            android:textColor="#3f2314"
+            android:inputType="textPassword"
+            android:hint="Re Enter Password"
+            android:textColorHint="#696764"/>   <!--Re enter password -->
+
+        <Button
+            android:id="@+id/regNextButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enterReenter"
+            android:layout_marginTop="300dp"
+            android:layout_centerHorizontal="true"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:textColor="@drawable/btn_textchange"
+            android:background="@drawable/btn_backgroundchange"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="38dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/regBottomTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go back to"
+            android:textColor="#1a1a1a"
+            android:textStyle="bold"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:id="@+id/regBottomLoginTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/regBottomTxt"
+            android:layout_marginLeft="10dp"
+            android:text="login"
+            android:textStyle="bold"
+            android:textColor="#3f2314"
+            android:textSize="23sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

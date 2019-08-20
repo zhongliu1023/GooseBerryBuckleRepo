@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/commonbg"
+    tools:context="in.appstute.smartbuckle.ui.activity.AssistMeActivity">
+
+    <RelativeLayout
+        android:id="@+id/assistHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/navassistToSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/navarrow"
+            android:layout_marginLeft="-10dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/assistMeHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="@string/assist_header"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/assistOptions"
+        android:layout_below="@+id/assistHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:id="@+id/helpBuckleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/suitcaseImg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/suitcase"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/helpBuckleTxt"
+                android:layout_below="@+id/suitcaseImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center"
+                android:text="@string/assist_helpbuckle_txt"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/policyLayout"
+            android:layout_below="@+id/helpBuckleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/policyImg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/policyimg"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/policyTxt"
+                android:layout_below="@+id/policyImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center"
+                android:text="@string/assist_policyTxt"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/updateVersionLayout"
+            android:layout_below="@+id/policyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/updateImg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/versionTxt"
+                android:layout_below="@+id/updateImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="v2.1.022"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/updatedVersionTxt"
+                android:layout_below="@+id/versionTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center"
+                android:text="@string/assist_updateVersion_txt"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

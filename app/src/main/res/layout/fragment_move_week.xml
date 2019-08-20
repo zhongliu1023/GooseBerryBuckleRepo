@@ -1,0 +1,290 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/commonbg"
+    tools:context="in.appstute.smartbuckle.ui.fragment.MoveWeekFragment">
+
+    <RelativeLayout
+        android:id="@+id/weekHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/weekHeadTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#5B3428"
+            android:textSize="20sp"
+            android:text="Week"/>
+
+        <TextView
+            android:id="@+id/weeklyDate"
+            android:layout_below="@+id/weekHeadTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="#5B3428"
+            android:textSize="17sp"
+            android:text="26th March - 1st April"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/stepsAndAvgLayout"
+        android:layout_below="@+id/weekHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <TextView
+            android:id="@+id/stepsTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Steps"
+            android:textSize="20sp"
+            android:textColor="#5B3428"/>
+
+        <TextView
+            android:id="@+id/dailyAvgTxt"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#5B3428"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/textViewMove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/dailyAvgTxt"
+            android:layout_marginRight="5dp"
+            android:text="Daily Average"
+            android:textSize="17sp"
+            android:textColor="#5B3428"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/stepsAndAvgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#816c5b"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:id="@+id/dispSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stepsAndAvgLayout"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:textSize="17sp"
+        android:textColor="#5B3428"
+        android:text="0"/>
+
+    <RelativeLayout
+        android:id="@+id/graphLayout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/dispSteps"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"> <!--Graph Layout Start-->
+
+    </RelativeLayout>  <!--Graph Layout End-->
+
+    <RelativeLayout
+        android:id="@+id/graphdataLayout"
+        android:layout_below="@+id/graphLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">  <!--Graphdata Layout Start-->
+
+        <RelativeLayout
+            android:id="@+id/stepsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/stepsIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/stepsicon"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/totalTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Total"
+                android:textColor="#5B3428"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/sleepTotalDisp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@+id/totalTxt"
+                android:layout_alignParentRight="true"
+                android:textColor="#5B3428"
+                android:text="0"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/stepsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="#816c5b"
+            android:layout_marginTop="1dp"/>
+
+        <RelativeLayout
+            android:id="@+id/monthDistanceLayout"
+            android:layout_below="@+id/stepsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:id="@+id/monthDistanceIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/distanceicon"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/totalmonthDistTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Total"
+                android:textColor="#5B3428"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/dispDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@+id/totalmonthDistTxt"
+                android:layout_alignParentRight="true"
+                android:textColor="#5B3428"
+                android:text="0"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/monthDistanceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="#816c5b"
+            android:layout_marginTop="1dp"/>
+
+        <RelativeLayout
+            android:id="@+id/caloriesMonthLayout"
+            android:layout_below="@+id/monthDistanceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:id="@+id/caloriesMonthIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/caloryicon"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/totalCaloryMonthTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Total"
+                android:textColor="#5B3428"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/caloryDisp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@+id/totalCaloryMonthTxt"
+                android:layout_alignParentRight="true"
+                android:textColor="#5B3428"
+                android:text="0"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/caloriesMonthLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="#816c5b"
+            android:layout_marginTop="1dp"/>
+
+        <RelativeLayout
+            android:id="@+id/paceMonthLayout"
+            android:layout_below="@+id/caloriesMonthLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:id="@+id/paceMonthIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/paceicon"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/averageMonthPaceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Average"
+                android:textColor="#5B3428"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/totalPaceMonthDisp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@+id/averageMonthPaceTxt"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:textColor="#5B3428"
+                android:text="stps/min"/>
+            <TextView
+                android:id="@+id/stepsMonthMinTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@+id/averageMonthPaceTxt"
+                android:layout_toLeftOf="@+id/totalPaceMonthDisp"
+                android:textColor="#5B3428"
+                android:text="0"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/paceMonthLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="#816c5b"
+            android:layout_marginTop="1dp"/>
+
+
+
+    </RelativeLayout>  <!--Graphdata Layout End-->
+
+</RelativeLayout>

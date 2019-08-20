@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/commonbg"
+    tools:context="in.appstute.smartbuckle.ui.activity.DeviceConnectActivity">
+
+   <RelativeLayout
+       android:id="@+id/devHeadSubhead"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="15dp"
+       android:layout_marginEnd="15dp"
+       android:layout_marginTop="25dp">
+
+   <TextView
+       android:id="@+id/devConnectHeader"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="25sp"
+       android:gravity="center"
+       android:textColor="#1a1a1a"
+       android:layout_centerHorizontal="true"
+       android:text="@string/device_connect_header"/>
+
+    <TextView
+        android:id="@+id/devConnectSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/devConnectHeader"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="#181818"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:text="@string/device_connect_subhead"/>
+
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buckleAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/devHeadSubhead"
+        android:layout_marginTop="15dp">
+
+
+        <ImageView
+            android:id="@+id/pairBuckle"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@mipmap/buckle1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buckleAdd"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <TextView
+            android:id="@+id/pairTapConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#321e14"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Tap to connect"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

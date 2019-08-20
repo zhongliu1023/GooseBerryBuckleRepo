@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/commonbg"
+    tools:context="in.appstute.smartbuckle.ui.activity.RegUserProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/userProfHeadSubhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp">
+
+    <TextView
+        android:id="@+id/regUsrHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:textColor="#1a1a1a"
+        android:layout_centerHorizontal="true"
+        android:text="@string/reg_user_header"/>
+
+    <TextView
+        android:id="@+id/regUsrSubhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regUsrHeader"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#272625"
+        android:layout_centerVertical="true"
+        android:text="@string/reg_user_subhead"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/userData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_white"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/userProfHeadSubhead"
+        android:layout_alignParentEnd="true">
+
+     <RelativeLayout
+         android:id="@+id/genderLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <TextView
+             android:id="@+id/genderTxt"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Gender"
+             android:layout_marginTop="30dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginBottom="15dp"
+             android:textColor="#272625"
+             android:layout_alignParentLeft="true"
+             android:textSize="16sp"/>
+         <TextView
+             android:id="@+id/genderSelect"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Male"
+             android:textColor="#5B3428"
+             android:layout_marginTop="30dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginBottom="15dp"
+             android:layout_alignParentRight="true"
+             android:textSize="16sp"/>
+
+     </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/genderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="#816c5b" />
+
+        <RelativeLayout
+            android:id="@+id/heightLayout"
+            android:layout_below="@+id/genderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/heightTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#272625"
+                android:layout_alignParentLeft="true"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/heightSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ft in"
+                android:textColor="#5B3428"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/heightValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="#816c5b"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentRight="true"
+                android:textSize="25sp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/heightLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="#816c5b"/>
+
+        <RelativeLayout
+            android:id="@+id/weightLayout"
+            android:layout_below="@+id/heightLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/weightTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#272625"
+                android:layout_alignParentLeft="true"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/weightSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lbs"
+                android:textColor="#5B3428"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/weightValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#816c5b"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentRight="true"
+                android:textSize="25sp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/weightLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="#816c5b"/>
+
+        <RelativeLayout
+            android:id="@+id/unitLayout"
+            android:layout_below="@+id/weightLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/unitTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Units"
+                android:textStyle="normal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_alignParentLeft="true"
+                android:textColor="#272625"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/unitSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Imperial UK"
+                android:textColor="#5B3428"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/regUserNextBtnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userData"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/regUserNextBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@drawable/btn_textchange"
+            android:background="@drawable/btn_backgroundchange"
+            android:text="Next"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

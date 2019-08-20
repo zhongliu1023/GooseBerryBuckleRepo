@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">SmartBuckle</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="error_empty_full_name">Looks like you have missed out on some information. Please try again.</string>
+    <string name="error_empty_full_name_title">Forgot Something</string>
+    <string name="error_empty_phone_no_title">Incorrect cell phone number!</string>
+    <string name="error_empty_phone_no">It seems you have entered incorrect cell phone number. Please try again</string>
+    <string name="email_constraint_mismatch">Invalid Email Id</string>
+    <string name="error_empty_password_title">Password!</string>
+    <string name="error_empty_password">Password must be min 6 characters long</string>
+    <string name="error_password_match_title">Oops, Your Passwords Don\'t Match</string>
+    <string name="error_password_match">The passwords you have typed don\'t seem to match. Please try again.</string>
+    <string name="error_login_cell_phone">Looks like you have missed out on some information. Please try again.</string>
+    <string name="error_login_cell_phone_title">Forgot Something?</string>
+    <string name="error_wrong_login">It seems you have entered incorrect name and password. Please try again.</string>
+    <string name="error_wrong_login_title">Sorry</string>
+    <string name="error_internet_connection">Internet connection failure</string>
+    <string name="error_in_json">Error json provided by server</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--first screen -->
+    <string name="smart_buckle">Smart Buckle</string>
+    <string name="rejuvenation_txt">Rejuvenation of your favorite \n watch made easy !</string>
+    <string name="settings_text">Settings</string>
+
+    <string name="scanner_subtitle_bonded">Bonded Devices</string>
+    <string name="scanner_subtitle_not_bonded">Available Devices</string>
+
+    <!--login screen text -->
+    <string name="hello_and_welcome">Hello and welcome \n to the gooseberry family.</string>
+    <string name="plz_login_to_continuetxt">Please login to continue \n your journey :)</string>
+
+    <!--Reset password head subhead -->
+    <string name="reset_screen_header">Reset Password</string>
+    <string name="reset_screen_subhead">Please fill in your registered cell number to which we will send you a link to reset your password.</string>
+
+    <!--Register screen  -->
+    <string name="register_subhead">Please fill in the details to \n register with us :)</string>
+
+    <!--Register user screen -->
+    <string name="reg_user_header">Before we begin, \n help us know you better.</string>
+    <string name="reg_user_subhead">Dont worry, your information is safe with us. We use this information to provide you with accurate health data.</string>
+
+    <!--Device connect screen -->
+    <string name="device_connect_header">Pair your Smart Buckle</string>
+    <string name="device_connect_subhead">Please make sure your smart buckle is fully charged and close to your phone.</string>
+
+    <!--Add buckle screen -->
+    <string name="add_buckle_head">Would you like to setup another smart buckle?</string>
+    <!--Assist me screen -->
+    <string name="assist_header">We are here to help you</string>
+    <string name="assist_helpbuckle_txt">I need help with my Smart Buckle</string>
+    <string name="assist_policyTxt">I am curious about your policies</string>
+    <string name="assist_updateVersion_txt">An update is available for your Smart Buckle</string>
+    <!--philisophy text -->
+    <string name="philosophy_header">our philosophy</string>
+    <string name="philosophy_main_text">Our planet is our home. Our humanity has advanced technologically and created a system where new material desires constantly
+    emerge around and within each of us. while we value our possessions we continue to acquire new products and gadgets for our daily life at astronomical rates.
+    \n \n
+    We must stop for a moment and rethink our methods. Can we leave with a middle ground approach, where we can adopt new technology without obsoleting the old ones ?
+    \n \n \
+    At gooseberry we believe that as a society we can choose to rejuvenate our possession by "smartening" them technologically. This alllows each of us to conserve more and re-use more
+    without compromising the advances and adoption of future lifestyles, be it fitness, entertainment or anything you can imagine in your life.
+    \n \n \
+    Our offerings are targeted to extend life of your acquired products and gadgets and in process rejuvenate the experience technologically.
+    \n \n \
+    We choose to pursue mindful trade with a meaningful purpose.</string>
+</resources>

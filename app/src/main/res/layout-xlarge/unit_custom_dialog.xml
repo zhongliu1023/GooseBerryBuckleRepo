@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bg">
+
+    <RelativeLayout
+        android:id="@+id/dialog1_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp">
+
+        <!-- <Button
+             android:id="@+id/genMaleBtn"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Male"
+             android:textAllCaps="false" />-->
+        <TextView
+            android:id="@+id/unitImperialBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Imperial UK"
+            android:textColor="#1e90ff"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <View
+            android:layout_below="@+id/unitImperialBtn"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#d3d3d3" />
+        <TextView
+            android:id="@+id/unitMetricUs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/unitImperialBtn"
+            android:text="Metric US"
+            android:textColor="#1e90ff"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <View
+            android:layout_below="@+id/unitMetricUs"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#d3d3d3" />
+
+        <TextView
+            android:id="@+id/unitCancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/unitMetricUs"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:textColor="#1e90ff"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/commonbg"
+    tools:context="in.appstute.smartbuckle.ui.activity.WeightSelectionActivity">
+
+    <RelativeLayout
+        android:id="@+id/weightHeadSubhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/weightHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:text="Before we begin, \n help us know you better."/>
+
+        <TextView
+            android:id="@+id/weightSubhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weightHead"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:text="Dont worry, your information is safe with us. We use this information to provide you with accurate health data"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weightData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightHeadSubhead"
+        android:background="@drawable/bg_button_white"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <TextView
+            android:id="@+id/weightSelectTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="#5B3428"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/feet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="0 lbs"
+            android:textColor="#5B3428"
+            android:textSize="18sp"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weightSelectTxt"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <EditText
+                android:id="@+id/weightLbs"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/height_edit_txt"
+                android:inputType="number"
+                android:gravity="center"
+                android:maxLength="3"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/lbsTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/weightLbs"
+                android:layout_marginTop="5dp"
+                android:text="lbs"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/weightBackBtn"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@drawable/btn_textchange"
+            android:background="@drawable/btn_backgroundchange"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:text="Back"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

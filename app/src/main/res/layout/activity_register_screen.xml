@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/commonbg"
+    tools:context="in.appstute.smartbuckle.ui.activity.RegisterScreenActivity">
+
+    <RelativeLayout
+        android:id="@+id/regHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/regHeaderTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_and_welcome"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:textColor="#1a1a1a"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/regSubheaderTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regHeaderTxt"
+            android:layout_marginTop="20dp"
+            android:text="@string/register_subhead"
+            android:textSize="20sp"
+            android:textColor="#272625"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/regHeader"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+
+        <EditText
+            android:id="@+id/enterFullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#3f2314"
+            android:inputType="text"
+            android:hint="Full Name"
+            android:textColorHint="#696764"/>  <!--Full name -->
+
+        <EditText
+            android:id="@+id/enterCellphone"
+            android:layout_below="@+id/enterFullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentStart="true"
+            android:textColor="#3f2314"
+            android:inputType="phone"
+            android:hint="Cell Phone"
+            android:textColorHint="#696764"/>  <!--cell phone -->
+
+        <EditText
+            android:id="@+id/enterEmail"
+            android:layout_below="@+id/enterCellphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#3f2314"
+            android:layout_alignParentStart="true"
+            android:inputType="textWebEmailAddress"
+            android:hint="Email"
+            android:textColorHint="#696764"/>  <!--Email -->
+
+        <EditText
+            android:id="@+id/enterPassword"
+            android:layout_below="@+id/enterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#3f2314"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColorHint="#696764"/>   <!-- Password-->
+
+        <EditText
+            android:id="@+id/enterReenter"
+            android:layout_below="@+id/enterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#3f2314"
+            android:inputType="textPassword"
+            android:hint="Re Enter Password"
+            android:textColorHint="#696764"/>   <!--Re enter password -->
+
+        <Button
+            android:id="@+id/regNextButton"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enterReenter"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@drawable/btn_textchange"
+            android:background="@drawable/btn_backgroundchange"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBottomTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/regBottomTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go back to"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="#1a1a1a"
+
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/relativeLayoutBottomTxt"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="40dp">
+
+        <TextView
+            android:id="@+id/regBottomLoginTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="login"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/loginClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/regBottomTxt"
+            android:layout_marginLeft="5dp"
+            android:textSize="17sp"
+            android:text="login"
+            android:textColor="#3f2314"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
